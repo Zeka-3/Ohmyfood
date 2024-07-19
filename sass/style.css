@@ -713,6 +713,11 @@ a {
   color: #9356DC;
 }
 
+.functioning__step--icon2 {
+  color: #9356DC;
+
+}
+
 .functioning__step--number {
   display: flex;
   align-items: center;
