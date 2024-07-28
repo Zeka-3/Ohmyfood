@@ -859,10 +859,15 @@ a {
 }
 
 .restaurant__cards--like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  margin: 0;
   position: absolute;
   top: 76%;
   right: 7%;
-  font-size: 25px;
+
 }
 
 .page__restaurant--img {
@@ -1087,6 +1092,58 @@ a {
   content: "\f058";
   color: #ffffff;
   transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+
+.like-checkbox {
+  display: none;
+}
+
+.heart {
+  position: relative;
+  width: 17px;
+  /* Taille réduite */
+  height: 17px;
+  /* Taille réduite */
+  background-color: #ccc;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 5px;
+  /* Marge en haut */
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  /* Taille réduite */
+  height: 17px;
+  /* Taille réduite */
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.heart:before {
+  top: -8.5px;
+  /* Position ajustée */
+  left: 0;
+}
+
+.heart:after {
+  left: 8.5px;
+  /* Position ajustée */
+  top: 0;
+}
+
+.like-checkbox:checked+.heart {
+  background-color: #ae75f5;
+}
+
+.like-checkbox:checked+.heart:before,
+.like-checkbox:checked+.heart:after {
+  background-color: #ae75f5;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -38,22 +38,19 @@
             <button type="submit" class="hero__btngradient">Explorer nos restaurants</button>
         </section>
         <!--///// functionining /////-->
-        <section class=" functioning">
+        <section class="functioning">
             <h3 class="functioning__title">Fonctionnement</h3>
             <div class="functioning__list">
-
                 <div class="functioning__step">
                     <p class="functioning__step--number">1</p>
                     <i class="fas fa-mobile-alt functioning__step--icon"></i>
                     <p class="functioning__step--subtitle">Choisissez un restaurant</p>
                 </div>
-
                 <div class="functioning__step">
                     <p class="functioning__step--number">2</p>
                     <i class="fas fa-list-ul functioning__step--icon"></i>
                     <p class="functioning__step--subtitle">Composez votre menu</p>
                 </div>
-
                 <div class="functioning__step">
                     <p class="functioning__step--number">3</p>
                     <i class="fas fa-store functioning__step--icon2"></i>
@@ -65,7 +62,6 @@
         <section class="restaurant">
             <h3 class="restaurant__title">Restaurants</h3>
             <div class="restaurant__bloc">
-
                 <article class="restaurant__cards">
                     <a href="restaurants/palette-gout.html">
                         <div class="restaurant__cards--img">
@@ -83,7 +79,8 @@
                         </div>
                     </a>
                     <div class="restaurant__cards--like">
-                        <button type="submit" class="button__like"><i class="far fa-heart"></i></button>
+                        <input type="checkbox" id="like1" class="like-checkbox">
+                        <label for="like1" class="heart"></label>
                     </div>
                 </article>
 
@@ -104,7 +101,8 @@
                         </div>
                     </a>
                     <div class="restaurant__cards--like">
-                        <button type="submit" class="button__like"><i class="far fa-heart"></i></button>
+                        <input type="checkbox" id="like2" class="like-checkbox">
+                        <label for="like2" class="heart"></label>
                     </div>
                 </article>
 
@@ -122,7 +120,8 @@
                         </div>
                     </a>
                     <div class="restaurant__cards--like">
-                        <button type="submit" class="button__like"><i class="far fa-heart"></i></button>
+                        <input type="checkbox" id="like3" class="like-checkbox">
+                        <label for="like3" class="heart"></label>
                     </div>
                 </article>
 
@@ -140,16 +139,15 @@
                         </div>
                     </a>
                     <div class="restaurant__cards--like">
-                        <button type="submit" class="button__like"><i class="far fa-heart"></i></button>
+                        <input type="checkbox" id="like4" class="like-checkbox">
+                        <label for="like4" class="heart"></label>
                     </div>
                 </article>
             </div>
         </section>
         <div class="loading-spinner-container">
-            <div class="loading-spinner">
-            </div>
-            <div class="loading-spinner__border">
-            </div>
+            <div class="loading-spinner"></div>
+            <div class="loading-spinner__border"></div>
             <div class="loading-spinner__plate">
                 <div class="loading-spinner__plate__knife">
                     <img src="logo_img/loading-spinner/loading-spinner__knife.png" alt="">
@@ -161,10 +159,6 @@
                 <div class="loading-spinner__plate__food34"></div>
             </div>
         </div>
-
-
-
-
     </main>
     <!--///// footer /////-->
     <footer class="footer">
@@ -184,10 +178,8 @@
             <a class="footer__nav--info" href="mailto:avotreecoute@ohmyfood.fr">
                 <p>Contact</p>
             </a>
-
         </div>
     </footer>
-
 </body>
 
 </html>
